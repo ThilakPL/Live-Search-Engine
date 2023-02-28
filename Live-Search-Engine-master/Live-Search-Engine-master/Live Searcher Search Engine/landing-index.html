@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <title>Searcher Search Engine</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            color: white;
+            background-color: black;
+            background-image: url('https://i.pinimg.com/736x/29/cd/43/29cd43acc0ee8ae3b8967a77d82262dc.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 100rem;
+            margin: 2rem auto;
+            padding: 100px 2rem;
+            color: black;
+            text-align: justify;
+        }
+
+        .row {
+          width: auto;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            line-height: 3;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column; 
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: red;
+          color: white;
+          text-align: center;
+        }
+
+        .list-group list-group-horizontal{
+          align-items: center;
+        }
+
+        h2{
+          font-family: "Trirong", serif;
+          letter-spacing: 6px;
+          font-size: 42px;
+        }
+    </style>
+</head>
+<body>
+      <!-- Page Section -->
+      <!-- Navigation Bars -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SS Searcher</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Bg Files -->
+      <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 mb-3 mb-sm-0">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Searcher Search</h5>
+                      <p class="card-text">A search engine is a software system designed to carry out web searches. They search the World Wide Web in a systematic way for particular information specified in a textual web search query. The search results are generally presented in a line of results, often referred to as search engine results pages.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <br><br><br><br><br><br>  
+
+      <center><h2>PROFILE</h2></center>
+
+      
+      <div class="container">
+        <div class="row row-cols-3 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8eW91dHViZSUyMGxvZ298ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Hollywood Sign on The Hill" />
+              <div class="card-body">
+                <h5 class="card-title">YouTube</h5>
+                <p class="card-text"><br>
+                  YouTube is a popular video-sharing platform that allows users to upload, share, and view videos. It was created in 2005 and is currently one of the largest websites in the world with billions of monthly active users. YouTube is free to use, but monetizes content through advertisements and premium services like YouTube Premium. It is a subsidiary of Alphabet Inc. (Google).</p>
+                  <a href="#" class="btn btn-primary">Visit Now - YouTube</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="data:image/png;base64,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" class="card-img-top" alt="Palm Springs Road" />
+              <div class="card-body">
+                <h5 class="card-title">Unsplash</h5>
+                <p class="card-text"><br>
+                  Unsplash is a platform that offers free high-quality images for personal and commercial use. With over 1 million images in its collection, it provides a wide range of images covering various topics such as nature, travel, food, people, and more. These images are contributed by talented photographers from around the world and can be used without the need for attribution. Unsplash images are an excellent source for those looking for visually appealing images for their website, blog, or social media posts.</p>
+                  <a href="#" class="btn btn-primary">Visit Now - Unsplash</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Emblem.png" class="card-img-top" alt="Los Angeles Skyscrapers" />
+              <div class="card-body">
+                <h5 class="card-title"><br>GitHub</h5>
+                <p class="card-text"><br><br><br>
+                  GitHub is a web-based platform for version control and collaboration that allows developers to store and manage their projects, track changes and communicate with others. It also acts as a repository for open-source software, allowing anyone to contribute to and use these projects. It has become an essential tool for developers and has transformed the way software is developed and shared.</p>
+                  <a href="#" class="btn btn-primary">Visit Now - GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://previews.123rf.com/images/magurok/magurok1307/magurok130700040/20954355-recipes-banner.jpg" class="card-img-top" alt="Skyscrapers" />
+              <div class="card-body">
+                <h5 class="card-title">Food Recipes</h5>
+                <p class="card-text">
+                  A dish in gastronomy is a specific food preparation, a "distinct article or variety of food", ready to eat or to be served. A dish may be served on tableware, or may be eaten in one's hands. Instructions for preparing a dish are called recipes.</p>
+                  <a href="#" class="btn btn-primary">Visit Now - Food Recipes</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <br><br><br>
+    <br>
+
+      <footer class="footer">
+        <button id="demo">Test</button>
+        <br>
+        <p>Copyright &copy; Advanced Web Technology @ CIT</p>
+      </footer>
+</body>
+</html>
+
+<script>
+  var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Your Current Location : Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude;
+}
+
+window.onload = getLocation;
+</script>
